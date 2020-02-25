@@ -1,0 +1,176 @@
+body{
+	background-image: url(../images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: hsl(257, 50%, 57%);
+    font-family: 'Raleway';
+}
+
+nav ul {margin-top: 25px;}
+
+nav ul li{font-weight: 400;
+          font-size: 23px;
+          padding: 3px;
+          color: #fff;}
+
+.home{ color: #fff;  
+        margin: auto; }
+
+.home .img-info img{border-radius: 50%;
+                    width: 115px;
+                    border: 1px solid #443434; }
+
+.card-body h2{font-size: 40px; 
+              font-weight: bold}
+
+.card-body h5{font-size: 20px}
+
+.card-body h5 i{ color: #fff}
+
+.about{margin-left: 250px;}
+
+.about .quote {background: #fff;
+        width: 70%;
+        padding: 25px;
+        margin-top: 35px;
+        margin-bottom: 20px;
+        box-shadow: inset 0 -3em 3em rgba(103, 98, 98, 0),
+                    0 0 0 2px rgb(255,255,255),
+                    0.3em 0.3em 1em rgba(154, 154, 154, 0.3)}
+
+.about i {color: #8259d0;
+         font-size: 16px;}
+
+.about blockquote {padding-left: 5px;
+                   margin: 0 0 1rem; }
+
+.fa-quote-right{float: right; 
+                margin-right: 15px}
+
+.social{padding-top: 40px}
+
+.social li{display: inline-block}
+
+.social li i {margin: 5px;
+              font-size: 30px;
+}
+.social li i:hover {color: #d9ceef} 
+
+.projects{   padding: 60px 0 }
+
+.projects h2{ font-weight: normal;
+                  text-decoration: underline;
+                  color: #e4daea;}
+
+.projects ul { margin-top: 50px }
+
+.projects ul li{display: inline-block;  
+				border: 2px solid #d9ceef; 
+				color: #A7A7A7;  
+				padding: 10px;
+				border-radius: 5px;
+				margin-right: 5px }
+
+.projects ul li.selected{  background-color: #d9ceef; 
+							border: 2px solid #d9ceef; 
+							color: #fff }
+
+.projects .gallery{ margin-top: 50px; 
+	                overflow: hidden }
+
+.projects .gallery .row > div:nth-child(2){ margin-right: 1%; 
+											margin-left: 1% }
+
+.projects .gallery .row > div { width: 32.66666%;  
+								float: left;
+								margin-bottom: 12px;
+								background-color: #ddd;   
+								position:relative }
+
+.projects .gallery .row > div .over { position: absolute;  
+										left: 0; 
+										top: 0; 
+										right: 0;
+										bottom: 0; 
+										width: 100%;
+										height: 100%; 
+										color: #fff;
+										line-height: 232px; 
+										font-size: 20px; 
+										font-weight: bold; 
+										text-align: center;  
+										background-color:#d9ceef;  
+										display: none }
+
+.projects .gallery .row > div .over a{color: #9258d4;
+text-decoration: none}
+
+.projects .gallery .row > div .heart{  position: absolute;
+										bottom: 20px;
+										right: 20px; 
+										color: #fff; 
+										display: none }
+
+.projects .gallery .row > div:hover .over,
+.projects .gallery .row > div:hover .heart { display: block}
+
+.projects .gallery .row > div img{ width: 385px;
+									height: 215px; }
+
+
+.footer{  background: #5e3ead;
+		  color: #eae6e6;
+	      padding: 10px;
+		  padding-left: 20px;}
+
+.footer a{ color: #f1f1f1;
+			font-size: 20px;
+			padding: 13px; }
+
+.footer a:hover{color: #FFF }
+
+.footer h3{  letter-spacing:1px;  margin: 30px 0 20px }
+
+.footer .awseom img{width: 150px ; height: 115px}
+
+
+.footer .three-columns{ overflow: hidden }
+
+.footer .three-columns li { width: 33.3333%; 
+							float: left;
+							font-size: 18px;
+							padding: 5px 0}
+
+.footer .social-list{ overflow: hidden;
+						margin: 20px 0 10px}
+
+.footer .social-list li{ float: left; 
+							margin-right: 3px; 
+							opacity: 0.7; 
+							filter: alpha(opacity=70)}
+
+.footer .social-list li:hover{opacity: 1}
+
+.footer .img-thumbanil{ background: rgba(0,0,0,0.2); 
+						border: 1px solid #444;
+						margin-bottom: 5px}
+
+.footer .copyright{ background: #7a5bc8;
+					color: #d6cdde;
+					padding: 15px 0;
+					margin-top: 30px;
+					font-size: 19px; }
+		
+
+@media(max-width:767px)
+{
+    header{}
+    
+    
+    .home{    margin-left: -17px;
+        margin-top: 140px;
+}
+        
+    .home .img-info img{}
+
+}
