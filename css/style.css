@@ -27,10 +27,10 @@ nav ul li{font-weight: 400;
 
 .card-body h5 i{ color: #fff}
 
-.about{margin-left: 250px;}
+.about{margin-left: 245px;}
 
 .about .quote {background: #fff;
-        width: 70%;
+        width: 75%;
         padding: 25px;
         margin-top: 35px;
         margin-bottom: 20px;
@@ -52,71 +52,143 @@ nav ul li{font-weight: 400;
 .social li{display: inline-block}
 
 .social li i {margin: 5px;
-              font-size: 30px;
-}
+              font-size: 30px;}
+
 .social li i:hover {color: #d9ceef} 
 
-.projects{   padding: 60px 0 }
+.grid-item { margin-bottom: 20px;}
 
-.projects h2{ font-weight: normal;
-                  text-decoration: underline;
-                  color: #e4daea;}
+.part h2{color: #fff;
+         padding-left: 12px;}
 
-.projects ul { margin-top: 50px }
+.section-separator { padding: 60px 0;
+					padding-top: 50px;}
 
-.projects ul li{display: inline-block;  
-				border: 2px solid #d9ceef; 
-				color: #A7A7A7;  
-				padding: 10px;
-				border-radius: 5px;
-				margin-right: 5px }
+.mh-project-gallery{column-count: 3;
+					padding-top: 30px;}
 
-.projects ul li.selected{  background-color: #d9ceef; 
-							border: 2px solid #d9ceef; 
-							color: #fff }
+.mh-project-gallery .grid-item figure { position: relative;
+										  overflow: hidden;
+										  border-radius: 10px;}
 
-.projects .gallery{ margin-top: 50px; 
-	                overflow: hidden }
+.mh-project-gallery .grid-item figure img { position: relative;
+											  width: 100%;
+											  display: block;}
 
-.projects .gallery .row > div:nth-child(2){ margin-right: 1%; 
-											margin-left: 1% }
+.mh-project-gallery .grid-item figure figcaption { position: absolute;
+												  padding: 15px;
+												  height: 100%;
+												  width: 100%;
+												  top: auto;
+												  left: 0;
+												  color: #fff;
+												  bottom: 0;
+												  z-index: 10;
+												  -webkit-transition: 0.5s;
+												  transition: 0.5s;
+												  -webkit-font-smoothing: antialiased;
+												  -moz-osx-font-smoothing: grayscale;}
 
-.projects .gallery .row > div { width: 32.66666%;  
-								float: left;
-								margin-bottom: 12px;
-								background-color: #ddd;   
-								position:relative }
+.mh-project-gallery .grid-item figure figcaption:after {content: '';
+						  position: absolute;
+						  width: 100%;
+						  height: 100%;
+						  top: 0;
+						  left: 0;
+						  -webkit-transition: all 0.4s ease-out;
+						  transition: all 0.4s ease-out;
+						  -webkit-font-smoothing: antialiased;
+						  -moz-osx-font-smoothing: grayscale;
+						  transform: translateX(0) translateY(0) translateZ(0) rotate(0deg) scale(0.95);
+						  -o-transform: translateX(0) translateY(0) translateZ(0) rotate(0deg) scale(0.95);
+						  -ms-transform: translateX(0) translateY(0) translateZ(0) rotate(0deg) scale(0.95);
+						  -moz-transform: translateX(0) translateY(0) translateZ(0) rotate(0deg) scale(0.95);
+						  -webkit-transform: translateX(0) translateY(0) translateZ(0) rotate(0deg) scale(0.95);
+						  z-index: -1;
+						  opacity: 0;}
 
-.projects .gallery .row > div .over { position: absolute;  
-										left: 0; 
-										top: 0; 
-										right: 0;
-										bottom: 0; 
-										width: 100%;
-										height: 100%; 
-										color: #fff;
-										line-height: 232px; 
-										font-size: 20px; 
-										font-weight: bold; 
-										text-align: center;  
-										background-color:#d9ceef;  
-										display: none }
+.mh-project-gallery .grid-item figure figcaption .sub-title { margin: 0;
+								  padding: 0;
+								  position: absolute;
+								  text-align: center;
+								  width: 100%;
+								  left: 0;
+								  font-size: 13px;
+								  top: 50%;
+								  margin-top: 30px;
+								  transform: translateX(-70px) translateY(0) translateZ(0) rotate(0deg) scale(1);
+								  -o-transform: translateX(-70px) translateY(0) translateZ(0) rotate(0deg) scale(1);
+								  -ms-transform: translateX(-70px) translateY(0) translateZ(0) rotate(0deg) scale(1);
+								  -moz-transform: translateX(-70px) translateY(0) translateZ(0) rotate(0deg) scale(1);
+								  -webkit-transform: translateX(-70px) translateY(0) translateZ(0) rotate(0deg) scale(1);
+								  -webkit-transition: 0.5s;
+								  transition: 0.5s;
+								  -webkit-font-smoothing: antialiased;
+								  -moz-osx-font-smoothing: grayscale;
+								  opacity: 0;
+								  letter-spacing: 0px;}
 
-.projects .gallery .row > div .over a{color: #9258d4;
-text-decoration: none}
+.mh-project-gallery .grid-item figure figcaption a { position: absolute;
+													  z-index: 1111;
+													  width: 100%;
+													  height: 100%;
+													  left: 0;
+													  top: 0;
+													  text-indent: -99999px;}
 
-.projects .gallery .row > div .heart{  position: absolute;
-										bottom: 20px;
-										right: 20px; 
-										color: #fff; 
-										display: none }
+.mh-project-gallery .grid-item figure:hover { -webkit-transition: all 0.4s ease-out;
+											  transition: all 0.4s ease-out;
+											  -webkit-font-smoothing: antialiased;
+											  -moz-osx-font-smoothing: grayscale;
+}
 
-.projects .gallery .row > div:hover .over,
-.projects .gallery .row > div:hover .heart { display: block}
+.mh-project-gallery .grid-item figure:hover figcaption {color: #fff;
+														  -webkit-font-smoothing: antialiased;
+														  -moz-osx-font-smoothing: grayscale;
+														  background: #d9ceef;
+opacity: 0.8;filter: alpha(opacity=70)
+}
 
-.projects .gallery .row > div img{ width: 385px;
-									height: 215px; }
+.mh-project-gallery .grid-item figure:hover figcaption:after { opacity: 1;
+  transform: translateX(0) translateY(0) translateZ(0) rotate(0deg) scale(1);
+  -o-transform: translateX(0) translateY(0) translateZ(0) rotate(0deg) scale(1);
+  -ms-transform: translateX(0) translateY(0) translateZ(0) rotate(0deg) scale(1);
+  -moz-transform: translateX(0) translateY(0) translateZ(0) rotate(0deg) scale(1);
+  -webkit-transform: translateX(0) translateY(0) translateZ(0) rotate(0deg) scale(1);
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;}
 
+.mh-project-gallery .grid-item figure:hover figcaption .sub-title {
+  transform: translateX(0px) translateY(0) translateZ(0) rotate(0deg) scale(1);
+  -o-transform: translateX(0px) translateY(0) translateZ(0) rotate(0deg) scale(1);
+  -ms-transform: translateX(0px) translateY(0) translateZ(0) rotate(0deg) scale(1);
+  -moz-transform: translateX(0px) translateY(0) translateZ(0) rotate(0deg) scale(1);
+  -webkit-transform: translateX(0px) translateY(0) translateZ(0) rotate(0deg) scale(1);
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  opacity: 1;}
+
+.mh-project-gallery .grid-item figure > div .over { position: absolute;  
+													left: 0; 
+													top: 0; 
+													right: 0;
+													bottom: 0; 
+													width: 100%;
+													height: 100%; 
+													color: #fff;
+													line-height: 232px; 
+													font-size: 20px; 
+													font-weight: bold; 
+													text-align: center;  
+													background-color:#d9ceef;  
+													display: none }
+
+.mh-project-gallery .grid-item figure .over a{color: #9258d4;
+										text-decoration: none}
+
+.mh-project-gallery .grid-item figure:hover .over { display: block}
 
 .footer{  background: #5e3ead;
 		  color: #eae6e6;
@@ -131,7 +203,10 @@ text-decoration: none}
 
 .footer h3{  letter-spacing:1px;  margin: 30px 0 20px }
 
-.footer .awseom img{width: 150px ; height: 115px}
+.footer .awseom img{width: 150px ; 
+					height: 115px;
+					margin-bottom: 8px;
+}
 
 
 .footer .three-columns{ overflow: hidden }
@@ -164,13 +239,20 @@ text-decoration: none}
 
 @media(max-width:767px)
 {
-    header{}
-    
-    
-    .home{    margin-left: -17px;
-        margin-top: 140px;
-}
+    .home{ margin-top: 15px;}
         
-    .home .img-info img{}
+	.about{margin-left: 15px;}
+	
+	.about .quote{width: 95%}
+	
+	.social {margin-left: -60px}
+	
+	.social li{ padding: 6px;}
+	
+	.social li i { margin: 0px;
+					font-size: 22px;}
+	
+	.footer .awseom img{width: 190px}
+	
 
 }
