@@ -235,9 +235,8 @@ opacity: 0.8;filter: alpha(opacity=70)
 					padding: 15px 0;
 					margin-top: 30px;
 					font-size: 19px; }
-		
 
-@media(max-width:767px)
+@media(max-width:425px )
 {
     .home{ margin-top: 15px;}
         
@@ -252,7 +251,23 @@ opacity: 0.8;filter: alpha(opacity=70)
 	.social li i { margin: 0px;
 					font-size: 22px;}
 	
+	.mh-project-gallery{column-count: 1;}
+	
 	.footer .awseom img{width: 190px}
 	
+}
+@media(max-width:375px)
+{
+		.footer .awseom img{width: 170px}
 
 }
+@media(max-width:320px)
+{
+	.social {font-size: 0px;
+				column-count: 3;
+				text-align: center;}
+	
+	.footer .awseom img { width: 140px;}
+
+}
+
